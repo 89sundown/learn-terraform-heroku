@@ -27,7 +27,7 @@ resource "heroku_app" "example" {
 
 resource "heroku_addon" "postgres" {
   app  = heroku_app.example.id
-  plan = "heroku-postgresql:hobby-dev"
+  plan = "heroku-postgresql:essential-0"
 }
 
 resource "heroku_build" "example" {
