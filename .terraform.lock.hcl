@@ -5,6 +5,7 @@ provider "registry.terraform.io/heroku/heroku" {
   version     = "4.6.0"
   constraints = "~> 4.6.0"
   hashes = [
+    "h1:AtnR9tsQC90ztGGCkUB3Hia6/m8Lksx4Wft4xnaXpqU=",
     "h1:e88YRtgc/5CNwlzqXiAt1cRXF8X7/ExZh4FQs6Pdvvc=",
     "zh:20ffba655d2e3a1732fc425c95407ba2f64bde59c2542de737cf3537a2d8a468",
     "zh:4eaebcd282010bd2bcf0aca11b2a86b41a48e797603aaaa195766a134fe45bf7",

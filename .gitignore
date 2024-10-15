@@ -1,6 +1,9 @@
 # Ignore application files
 node_modules
 
+
+
+
 # Local .terraform directories
 **/.terraform/*
 
@@ -35,3 +38,6 @@ override.tf.json
 .terraformrc
 terraform.rc
 terraform
+terraform.tfvars
+.venv
+.env

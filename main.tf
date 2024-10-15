@@ -1,7 +1,24 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
-provider "heroku" {}
+provider "heroku" {
+  api_key = var.heroku_api_key   # Securely fetch Heroku API key from variable
+  email   = var.heroku_email     # Securely fetch Heroku email from variable
+}
+
+# Define Heroku API key variable
+variable "heroku_api_key" {
+  type      = string
+  sensitive = true
+  description = "The API key for authenticating with Heroku"
+}
+
+# Define Heroku email variable
+variable "heroku_email" {
+  type        = string
+  description = "The email associated with the Heroku account"
+}
+
 
 resource "heroku_app" "example" {
   name   = "learn-terraform-heroku"
